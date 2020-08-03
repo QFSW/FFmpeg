@@ -7620,7 +7620,7 @@ print_enabled_components(){
     struct_name=$2
     name=$3
     shift 3
-    echo "static const $struct_name * const $name[] = {" > $TMPH
+    echo "static $struct_name * const $name[] = {" > $TMPH
     for c in $*; do
         if enabled $c; then
             case $name in
