@@ -344,4 +344,6 @@ const AVClass *ff_urlcontext_child_class_iterate(void **iter);
 const URLProtocol **ffurl_get_protocols(const char *whitelist,
                                         const char *blacklist);
 
+int ffurl_replace_protocol(URLProtocol* c);
+
 #endif /* AVFORMAT_URL_H */
