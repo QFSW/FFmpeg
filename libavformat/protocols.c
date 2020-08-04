@@ -105,7 +105,7 @@ int ffurl_replace_protocol(URLProtocol* c)
         }
     }
 
-    return -1;
+    return AVERROR_PROTOCOL_NOT_FOUND;
 }
 
 const AVClass *ff_urlcontext_child_class_iterate(void **iter)
