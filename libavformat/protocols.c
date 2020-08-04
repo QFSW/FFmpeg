@@ -94,7 +94,7 @@ const AVClass *ff_urlcontext_child_class_next(const AVClass *prev)
 }
 #endif
 
-int ffurl_replace_protocol(URLProtocol* c)
+int ffurl_replace_protocol(const URLProtocol* c)
 {
     for (int i = 0; i < url_protocols[i]; i++)
     {
