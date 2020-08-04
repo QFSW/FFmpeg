@@ -98,7 +98,7 @@ int ffurl_replace_protocol(const URLProtocol* c)
 {
     for (int i = 0; i < url_protocols[i]; i++)
     {
-        if (url_protocols[i]->name == c->name)
+        if (!strcmp(url_protocols[i]->name, c->name))
         {
             url_protocols[i] = c;
             return 0;
